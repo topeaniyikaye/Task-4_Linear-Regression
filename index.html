@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+    <div style="margin: auto; margin-top: 60px; max-width: fit-content; padding: 48px; background-color: #fafafa; border-radius: 25px; border-width: 2px; border-color: #111111;">
+    <h1>Linear regression Calculator</h1>
+
+<form id="form" style="display: flex; flex-direction: column; max-width: 500px; row-gap: 12px;">
+    <label for="xList"> X Axis <br> <span style="opacity: 50%; font-size: 12px;">kindly input the X axis of your linear regression graph</span></label>
+
+<input id="xList" type="text">
+
+<label for="yList"> Y Axis  <br> <span style="opacity: 50%; font-size: 12px;">kindly input the Y axis of your linear regression graph</span></label>
+
+
+<input id="yList" type="text">
+<button type="submit" id="submitBtn"> submit </button>
+</form>
+
+<h3 style="display: none;" id="xoutput"></h3>
+<h3 style="display: none;" id="youtput"></h3>
+
+<div id="result">
+    <div style="display: flex; flex-direction: row;"> <h4 style="opacity: 50%;">Slope</h4>
+        <h4 style="margin-left: 12px;"id="slope"></h4>
+    </div>
+   
+    <div style="display: flex; flex-direction: row;">
+    <h4 style="opacity: 50%;">Y-intercept</h4>
+    <h4 style="margin-left: 12px;" id="yIntercept"></h4>
+</div>
+    
+</div>
+
+<div id="regressionCalculation">
+<form id="regressionInput" style="display: flex; flex-direction: column; row-gap: 12px;">
+    <label for="regressionInputBox">Known Value <br> <span style="opacity: 50%; font-size: 12px;">kindly input the Known value You would like to know the Unknown value for</span></label>
+    <input type="text" name="regressionInputBox" id="regressionInputBox">
+    <button id="regressionInputSubmit"> Submit </button>
+</form>
+<div style="display: flex; flex-direction: row; align-items: center;">
+    <h4 style="opacity: 50%;" >Regression result</h4>
+    <h4 style="margin-left: 12px;"id="regressionResult"></h4>
+</div>
+    
+</div>
+</div>
+  <script src="calculate.js" defer></script>
+
+</body>
+  
+</html>
